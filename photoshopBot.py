@@ -91,7 +91,6 @@ def create_imgur_album(images,submission):
 	album = imgur.create_album(fields)
 	album_deletehash = album['deletehash']
 	album_id = album['id']
-	print album_id
 
 	## Make sure first image in the album is the original image
 	first_image_link = format_image_link(submission.url)
